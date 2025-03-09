@@ -1,4 +1,4 @@
-# test
+import datetime
 
 class Distance:
     """
@@ -6,8 +6,9 @@ class Distance:
     """
     def __init__(self, distance):
         """Initialize the Distance object with distance and timestamp."""
-        pass
+        self.distance = distance # get distance as provided
+        self.time = datetime.datetime.now() # get timestamp
 
     def __str__(self):
         """Return a formatted string representation of the Distance object."""
-        pass
+        return f"Distance of {self.distance} taken at {self.time}" # return formatted string
